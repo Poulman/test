@@ -14,8 +14,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('test/') {
-                    sh 'echo "218591" | sudo -S command'
-                	sh  'docker-compose up . '
+                    sh 'echo "218591" | sudo -S docker-compose up .'
                 }
             }
         }
