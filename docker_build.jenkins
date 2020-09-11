@@ -14,6 +14,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('test/') {
+                    sh 'cd /home/pavlo/Kube_Test'
                     sh 'docker-compose up .'
                 }
             }
