@@ -14,7 +14,8 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('test/') {
-                	sh 'sudo -s docker-compose up . '
+                    sh 'sudo -s'
+                	sh  'docker-compose up . '
                 }
             }
         }
